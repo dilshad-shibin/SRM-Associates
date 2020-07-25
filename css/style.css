@@ -10308,3 +10308,34 @@ address .icon {
     font-weight: bold;
     color: #fff;
 }
+
+.about-section {
+    padding: 70px 0;
+}
+
+.about-header {
+    margin-bottom: 40px;
+}
+
+.about-header h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #444;
+    letter-spacing: .5px;
+    position: relative;
+}
+
+.about-header h3::after {
+    position: absolute;
+    content: "";
+    width: 15%;
+    left: 0px;
+    bottom: -8px;
+    height: 2px;
+    background-color: #00d280;
+}
+
+.contact-header-name {
+    color: #444;
+    font-size: 30px;
+}

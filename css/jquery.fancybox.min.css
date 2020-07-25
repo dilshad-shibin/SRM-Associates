@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body.fancybox-active {
     overflow: hidden
 }
@@ -525,7 +524,6 @@ body.fancybox-iosfix {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -537,7 +535,6 @@ body.fancybox-iosfix {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -863,11 +860,9 @@ li.fancybox-thumbs-loading {
     .fancybox-thumbs {
         width: 110px
     }
-
     .fancybox-show-thumbs .fancybox-inner {
         right: 110px
     }
-
     .fancybox-thumbs>ul>li {
         max-width: calc(100% - 10px)
     }
