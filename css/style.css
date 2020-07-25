@@ -8943,7 +8943,8 @@ img {
 
 .contact-address {
     position: relative;
-    margin-bottom: 40px;
+    padding: 20px;
+    margin-bottom: 15px
 }
 
 .contact-address .inner {
@@ -10222,7 +10223,7 @@ address .icon {
 
 .contact-title {
     background: url("../images/main-slider/banner-bg2.webp") center center/cover no-repeat local;
-    height: 250px;
+    height: 100px;
     width: 100%;
     position: relative;
     display: table;
@@ -10254,7 +10255,7 @@ address .icon {
     transform: translate(-50%, -50%);
 }
 
-.contact-title h1,
+.contact-title h3,
 .contact-title ol {
     color: #fff;
 }
