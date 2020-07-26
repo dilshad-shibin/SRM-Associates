@@ -115,10 +115,10 @@
 
                                 <!-- start menu item list -->
                                 <ul class="elementskit-navbar-nav nav-alignment-dynamic">
-                                    <li class="elementskit-notdropdown-has"><a href="index.html">Home</a></li>
-                                    <li class="elementskit-notdropdown-has active-color"><a href="index.html#about">About</a></li>
-                                    <li class="elementskit-notdropdown-has"><a href="index.html#services">Services</a></li>
-                                    <li class="elementskit-notdropdown-has"><a href="index.html#gallery">Gallery</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active-color"><a href="about.html">About</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="index.html#gallery">Gallery</a></li>
                                     <li class="elementskit-dropdown-has"><a href="#">Contact</a>
                                         <ul class="elementskit-dropdown elementskit-submenu-panel">
                                             <li><a href="contact-thrissur.html">Thrissur</a></li>
@@ -165,11 +165,7 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="title-box">
-                    <h1>About Us</h1>
-                    <ol class="breadcrumb d-flex justify-content-center align-items-center" style="margin-left: 0;">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">About Us</li>
-                    </ol>
+                    <h3>About Us</h3>
                 </div>
             </div>
         </section>
@@ -569,50 +565,6 @@
     <script src="lib/easing/easing.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="js/countdown.js"></script>
-
-
-    <script>
-        $(function() {
-            // (Optional) Active an item if it has the class "is-active"	
-            $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
-
-            $(".accordion > .accordion-item").click(function() {
-                // Cancel the siblings
-                $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
-                // Toggle the item
-                $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
-            });
-        });
-    </script>
-
-    <script>
-        /*------------------------------------------
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                = FAN FACT COUNT
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            -------------------------------------------*/
-        if ($(".counter-start").length) {
-            $('.counter').appear();
-            $(document.body).on('appear', '.counter', function(e) {
-                var $this = $(this),
-                    countTo = $this.attr('data-count');
-
-                $({
-                    countNum: $this.text()
-                }).animate({
-                    countNum: countTo
-                }, {
-                    duration: 3000,
-                    easing: 'linear',
-                    step: function() {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function() {
-                        $this.text(this.countNum);
-                    }
-                });
-            });
-        }
-    </script>
-
 
 </body>
 
