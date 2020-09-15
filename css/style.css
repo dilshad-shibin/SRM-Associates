@@ -10333,10 +10333,134 @@ address .icon {
     left: 0px;
     bottom: -8px;
     height: 2px;
-    background-color: #00d280;
+    background-color: #1CB99F;
 }
 
 .contact-header-name {
     color: #444;
     font-size: 30px;
+}
+
+.history-section {
+    position: relative;
+    margin-bottom: 50px;
+    background-image: url(../images/background/world-map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.history-heading {
+    margin-bottom: 50px;
+}
+
+.history-heading h2 {
+    position: relative;
+    font-size: 38px;
+    line-height: 1.2em;
+    color: #222222;
+    font-weight: 700;
+}
+
+.history-heading h2::after {
+    position: absolute;
+    content: "";
+    width: 15%;
+    left: 43%;
+    bottom: -8px;
+    height: 2px;
+    background-color: #1CB99F;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 210px;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 100%;
+    height: 12px;
+    margin-left: -5px;
+    top: 12px;
+    left: 178px;
+    width: 12px;
+    z-index: 1;
+    background-color: currentColor;
+}
+
+.primary-color-bg {
+    background-color: #424e5c;
+}
+
+.timeline-year {
+    left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    line-height: 36px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media(max-width: 991px) {
+    .timeline-year {
+        margin-left: 0;
+        width: 100%;
+    }
+    .timeline-item {
+        padding-left: 25px;
+        padding-top: 53px;
+    }
+    .timeline-item:after {
+        left: 0px !important;
+    }
+    .timeline-item:before {
+        display: none;
+    }
+    .timeline-year span {
+        margin-left: 32px !important;
+        float: left;
+    }
+}
+
+.timeline-year span {
+    font-size: 15px;
+}
+
+.color-header {
+    color: #fff !important;
+}
+
+.timeline-year:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #424e5c;
+    display: block;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.secc {
+    padding-bottom: 35px;
+}
+
+.timeline-item:after {
+    background-color: rgba(0, 0, 0, .1);
+    bottom: 0;
+    top: 0;
+    width: 2px;
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 178px;
 }
